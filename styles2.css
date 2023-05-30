@@ -1,0 +1,30 @@
+.paragraph-container {
+    background-color: #EFD3D7;
+    border: 3px solid #FF4B63;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px; /* Adjust the value to set the desired maximum width */
+    word-wrap: break-word; /* Add word-wrap property to allow breaking long words */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 40px; /* Add some bottom margin to create spacing between paragraphs */
+  }
+  
+  .paragraph-container p {
+    margin: 0; /* Remove default paragraph margin */
+  }
+  
+  /* Adjust the margin of the first paragraph to create space from the top */
+  .paragraph-container:first-child {
+    margin-top: 40px; /* Adjust the value as needed */
+  }
+  
+  /* Move the paragraphs to the right of the sidebar */
+  .sidebar {
+    float: left;
+    width: 300px;
+  }
+  
+  .content {
+    margin-left: 320px; /* Adjust this value to create space for the sidebar */
+  }
+  

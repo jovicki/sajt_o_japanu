@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+.sidebar {
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100vh;
+    transition: left 0.3s ease;
+    background-color: #FF4B63; /* Set the sidebar background color */
+    border: 2px solid #FFFFFF; /* Add a border to the sidebar */
+    border-radius: 10px; /* Optional: Add rounded corners to the border */
+    color: #FF89B4;
+    float: left;
+ }
+ .content {
+  margin-left: 320px; /* Adjust this value to create space for the sidebar */
+}
+
+  
+  /* Style the menu toggle button */
+  .menu-toggle {
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #333;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  /* Change the appearance of the menu toggle button */
+  .menu-toggle::before,
+  .menu-toggle::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu-toggle::before {
+    transform: translate(-50%, -8px);
+  }
+  
+  .menu-toggle::after {
+    transform: translate(-50%, 6px);
+  }
+  
+  /* Show the sidebar when the menu toggle button is clicked */
+  .menu-open .sidebar {
+    left: 0;
+  }
+  
+  /* Rotate the menu toggle button icon when the sidebar is open */
+  .menu-open .menu-toggle::before {
+    transform: translate(-50%, -8px) rotate(45deg);
+  }
+  
+  .menu-open .menu-toggle::after {
+    transform: translate(-50%, 6px) rotate(-45deg);
+  }
+  .panel {
+    background-color: #D6A3A3;
+    padding: 22px;
+    margin-bottom: 20px; /* Adjust this value as needed */
+    color: #fff;
+  }
+  
+  .panel h2 {
+    font-size: 22px;
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .panel p {
+    font-size: 18px;
+  }
+  
+  .menu-toggle {
+    position: fixed;
+    left: 10px;
+    top: 30px; /* Adjust this value as needed */
+    width: 40px;
+    height: 40px;
+    background-color: #FF4B63;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  body {
+    background-color: #D6A2AD; /* Replace with the desired color from the palette */
+
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .fancy-title {
+    font-family: "Arial", sans-serif;
+    font-size: 48px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .menu-toggle {
+    /* Existing button styles */
+  
+    transition: transform 0.3s ease; /* Add this line for the smooth transition */
+  }
+  .sidebar-text {
+    position: relative;
+  }
+  
+  .image-container {
+    position: absolute;
+    bottom: 10%;
+    left: 113%;
+    right: 10%;
+    height: 100%;
+    width: auto;
+
+    
+  }
+  
+  .image-container img {
+    height: 100%;
+    width: auto;
+    border: 3px solid #FF4B63;
+    padding: 10px;
+    border-radius: 8px;
+    background-color:#EFD3D7 ;
+  }
+
+ 
+  .image-container1 {
+    float: left;
+    margin-right:15px ;
+
+
+
+    
+  }
+  
+  .image-container1 img {
+    height: auto;
+    width: 400px;
+
+
+    border: 3px solid #FF4B63;
+    padding: 10px;
+    border-radius: 8px;
+    background-color:#EFD3D7 ;
+  }
+  /* Custom paragraph styles */
+.image19 {      
+  border: 3px solid #FF4B63;
+  border-radius: 8px;
+  max-width: 120px; /* Adjust the value to set the desired maximum width */
+  height: auto;
+  display: block;
+  margin-left: 15px;
+
+  float: right;
+}
+.image14 {
+  border: 3px solid #FF4B63;
+  border-radius: 8px;
+  max-width: 500px; /* Adjust the value to set the desired maximum width */
+  height: auto;
+  display: block;
+  margin-left: 15px;
+
+  float: right;
+
+
+
+}

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Japan</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="icon" href="icons8-japan-32.png" type="image/x-icon">
+  <style>
+    /* Custom link styles */
+    .panel a {
+      color: #FF4B63; /* Set the desired color for the links */
+      text-decoration: none; /* Remove underline */
+    }
+    
+    .panel a:hover {
+      text-decoration: underline; /* Add underline on hover */
+    }
+    .sidebar-text {
+    background-color: #EFD3D7;
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: "Bahnschrift", sans-serif;
+    border: 3px solid #FF4B63;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 900px; /* Adjust the value to set the desired maximum width */
+    word-wrap: break-word; /* Add word-wrap property to allow breaking long words */
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
+  }
+  .right-align-container {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: "Bahnschrift", sans-serif;
+
+    text-align: right;
+    margin-bottom: 30px;
+  }
+  
+  /* Border around the right-aligned paragraph */
+  .right-align-container p {
+    background-color: #EFD3D7;
+    display: inline-block;
+    border: 3px solid #FF4B63;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px; /* Adjust the value to set the desired maximum width */
+    word-wrap: break-word; /* Add word-wrap property to allow breaking long words */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  
+  }
+  .left-align-container {
+            color: #FFFFFF;
+            font-size: 16px;
+            font-family: "Bahnschrift", sans-serif;
+            text-align: left;
+            margin-bottom: 5px;
+            clear: both; /* Add this line to clear the floats */
+        }
+
+        /* Border around the left-aligned paragraph */
+    .left-align-container p {
+        background-color: #EFD3D7;
+            display: inline-block;
+            border: 3px solid #FF4B63;
+            padding: 17px;
+            border-radius: 8px;
+            max-width: 800px; /* Adjust the value to set the desired maximum width */
+            word-wrap: break-word; /* Add word-wrap property to allow breaking long words */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+          }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <h1 class="fancy-title">
+        Japan
+
+    </h1>
+      <div class="sidebar">
+        <div class="panel">
+          <a href="panel1.html">
+            <h2>Kultura</h2>
+            <p>običaji i tradicija</p>
+          </a>
+        </div>
+        <div class="panel">
+          <a href="panel2.html">
+            <h2>Hrana</h2>
+            <p>slatka i slana hrana japana</p>
+          </a>
+        </div>
+        <div class="panel">
+          <a href="panel3.html">
+            <h2>Istorija</h2>
+            <p>kratka i zanimljiva istorija</p>
+          </a>
+        </div>
+        <div class="panel">
+          <a href="panel4.html">
+            <h2>Tehnologija</h2>
+            <p>Japan-Zemlja budućnosti</p>
+          </a>
+        </div>
+        <div class="panel">
+          <a href="panel5.html">
+            <h2>O autoru</h2>
+            <p>neke informacije o meni</p>
+          </a>
+        </div>
+      </div>
+      <button class="menu-toggle"></button>
+    </nav>
+    <div class="content">
+      <!-- Main content goes here -->
+    <div class="left-align-container">
+      <img src="Japan-2107x1406.jpg" alt="First Image" class="image14">
+      
+      <p><b>Japan je fascinantan i jedinstvena zemlja koja sjedinjuje drevnu tradiciju i modernu tehnologiju na nevjerojatan način. Smeštena na istočnoj obali Azije, ova ostrvska država ima bogatu istoriju i kulturu koja je privukla mnoge posetioce iz celog sveta.</b></p>
+    </div>
+    <div class="right-align-container">
+      <p><b>Istorija kao i kultura ove države je na skroz drugom nivou nego bilo gde u evropi, pa čak i aziji, hiljadama godina održavaju svoju tradiciju, a i imaju čime da se pohvale.
+      </b></p>
+    </div>
+    <div class="left-align-container">
+      
+      <p><b>Gastronomi širom sveta smatraju Japansku za jednu od najboljih kuhinja na čitavom svetu, a najunikatnija je u svakom slučaju! Mešavina različitih ukusa (slanih,slatkih,ljutih i kiselih) u većini jelu stvarno ostavlja čoveka pod utiskom! </b></p>
+    </div>
+    <div class="right-align-container">
+      <div class="image-container1">
+      <img src="ff.jpeg" alt="Image description">
+    </div>
+      <p><b>Mnogo je ljudi smatra državom budućnosti, što nije daleko od istine. Brzi vozovi, roboti, futuristički restorani, pa čak i pametni toaleti i grudnjaci! Jedine države koje moguda rivališu Japan u sferama tehnologije su Južna Koreja i Singapur </b></p>
+    </div>
+    <div class="image-container1">
+      
+    
+  </div>
+  </div>
+
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('nav');
+    const button = document.querySelector('.menu-toggle');
+  
+    nav.classList.add('menu-open'); // Add this line to make the navigation bar start as open
+  
+    menuToggle.addEventListener('click', function() {
+      nav.classList.toggle('menu-open');
+      if (nav.classList.contains('menu-open')) {
+        button.style.transform = 'translateX(200px)'; // Adjust the value as needed
+      } else {
+        button.style.transform = 'none';
+      }
+    });
+  </script>
+  
+</body>
+</html>
